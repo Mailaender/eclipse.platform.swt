@@ -656,6 +656,19 @@ public void setFilterPath (String string) {
 }
 
 /**
+ * Some platforms save the last used file on their own
+ * and that last saved location takes precedence.
+ *
+ * @param force whether to overrule the last saved path
+ *
+ * @see #setFilterPath
+ */
+public void setFilterForcePath (boolean force) {
+
+	// This is already the default and cannot be changed.
+}
+
+/**
  * Sets the flag that the dialog will use to
  * determine whether to prompt the user for file
  * overwrite if the selected file already exists.
